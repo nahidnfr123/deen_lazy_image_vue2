@@ -1,24 +1,30 @@
 # deen_lazy_image_vue2
 
-## Project setup
+## Plugin Installation
+
+Yarn:
+
 ```
-yarn install
+yarn add deen_lazy_image_vue2
 ```
 
-### Compiles and hot-reloads for development
+###
+
+Npm:
+
 ```
-yarn serve
+npm install deen_lazy_image_vue2
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Usage
 
-### Lints and fixes files
 ```
-yarn lint
+<deen-lazy-image
+    source="https://www.pixelstalk.net/wp-content/uploads/2016/07/4k-Wallpapers-Screen-Download.jpg"
+    height="auto"
+    width="100%"
+    imageClass=""
+    alt="Image"
+    imgStyle=""
+    />
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

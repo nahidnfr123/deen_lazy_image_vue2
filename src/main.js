@@ -3,7 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-import deenLazyImage from "@/components";
+import deenLazyImage from "./index";
 
 Vue.use(deenLazyImage)
 

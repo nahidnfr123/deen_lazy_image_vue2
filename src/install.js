@@ -1,7 +1,7 @@
 import DeenLazyImage from "@/components/DeenLazyImage"
 import lazyLoadDirective from "@/components/LazyLoadDirective";
 
-export default {
+const DeenLazyImageInstall =   {
   /*
  * install function
  * @param  {Vue} Vue
@@ -11,17 +11,14 @@ export default {
     const isVue2 = Vue.version.split('.')[0] === '2'
     Vue.prototype.$Lazyload = DeenLazyImage
 
-    if (options) {
-      Vue.component('DeenLazyImage', DeenLazyImage)
-    }
+    if (options) Vue.component('DeenLazyImage', DeenLazyImage)
 
-    if (isVue2) {
-      Vue.directive('lazyload', lazyLoadDirective)
-    }
+    if (isVue2) Vue.directive('lazyload', lazyLoadDirective)
   }
 }
 
-export {
-  DeenLazyImage,
-  lazyLoadDirective
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(DeenLazyImageInstall);
 }
+
+export default DeenLazyImageInstall
