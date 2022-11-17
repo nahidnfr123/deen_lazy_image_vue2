@@ -1,21 +1,23 @@
 {
   "name": "deen_lazy_image_vue2",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "author": {
     "name": "Nahid Ferdous",
     "email": "nahidferdous240@gmail.com"
   },
   "license": "MIT",
-  "main" : ".dist/deen-lazy-image.common.js",
+  "main": ".dist/deen-lazy-image.common.js",
   "description": "Vue 2 lazy Load Image. Form DeenSoft 🎨",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library" : "vue-cli-service build --target lib --name deen-lazy-image ./src/install.js",
+    "build-library": "vue-cli-service build --target lib --name deen-lazy-image ./src/install.js",
     "lint": "vue-cli-service lint"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": "./dist/index.js",
     "./styles.css": "./dist/style.css"
@@ -59,7 +61,11 @@
     "type": "git",
     "url": "git+https://github.com/nahidnfr123/deen_lazy_image_vue2.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Vue2",
+    "vue-lazyload",
+    "lazy-image-load"
+  ],
   "bugs": {
     "url": "https://github.com/nahidnfr123/deen_lazy_image_vue2/issues"
   },
