@@ -24,6 +24,7 @@
 
 <script>
 export default {
+  name: "DeenLazyImage",
   props: {
     source: {type: String, required: false, default: null},
     imageClass: {type: [String, Array], default: ''},
